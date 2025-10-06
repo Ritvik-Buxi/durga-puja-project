@@ -1,0 +1,2 @@
+n = float(input("Enter a number to be raised to the power 1,2,3 and 4: "))
+print(f"Your number is {n}.\nThe number squared is {n**2}.\nThe number cubed is {n**3}.\nThe number to the power 4 is {n**4}")
