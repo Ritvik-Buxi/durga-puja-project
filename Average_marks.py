@@ -1,8 +1,48 @@
 # The user enters his/her marks in each subject
 Subjects = []
-Stream = int(input("If You have taken Science Stream enter 0, if you have taken Commerce press 1:\n"))
-Taken_PE = bool(int(input("If you have taken Physical Education Enter 1, if not enter 0:\n")))
-if Taken_PE:
+Taken_PE = bool(int(input("If you have taken Physical Education Enter 1, if not enter 0: ")))
+max_marks = 0
+pe_ = 0
+if Taken_PE:   
     Subjects.append("PE")
-English_Marks = input("Enter Your English marks out of 80:\n")
+    pe_ = float(input("Enter Your PE marks out of 100: "))
+    max_marks += 100
+else:
+    pe_ = None
 
+Taken_Math = bool(int(input("If you have taken Math 1, if not enter 0: ")))
+Math_ = 0
+if Taken_PE:   
+    Subjects.append("Math")
+    Math_ = float(input("Enter Your Math marks out of 80: "))
+    max_marks += 80
+else:
+    Math_ = None
+
+Taken_Biology = bool(int(input("If you have taken Biology 1, if not enter 0: ")))
+Biology_ = 0
+if Taken_PE:   
+    Subjects.append("Biology")
+    Biology_ = float(input("Enter Your Biology marks out of 70: "))
+    max_marks += 70
+else:
+    Biology_ = None
+
+English_ = input("Enter Your English marks out of 80: ")
+max_marks += 80
+Physics_ = input("Enter Your Physics marks out of 70: ")
+max_marks += 70
+Chemistry_ = input("Enter Your Chemistry marks out of 70: ")
+max_marks += 70
+Computer_ = input("Enter Your Computer marks out of 70: ")
+max_marks += 70
+
+Subjects.append("English")
+Subjects.append("Physics")
+Subjects.append("Chemistry")
+Subjects.append("Computer")
+
+print("Your list of subjects are: ",Subjects)
+average_ = (pe_+Math_+Biology_+English_+Physics_+Chemistry_+Computer_) / len(Subjects)
+percentage_ = ((pe_+Math_+Biology_+English_+Physics_+Chemistry_+Computer_) / max_marks)*100
+print("You have scored and average marks of ",average_," and an average percentage of ",percentage_)
