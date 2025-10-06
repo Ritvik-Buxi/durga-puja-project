@@ -8,33 +8,33 @@ if Taken_PE:
     pe_ = float(input("Enter Your PE marks out of 100: "))
     max_marks += 100
 else:
-    pe_ = None
+    pe_ = 0
 
 Taken_Math = bool(int(input("If you have taken Math 1, if not enter 0: ")))
 Math_ = 0
-if Taken_PE:   
+if Taken_Math:   
     Subjects.append("Math")
     Math_ = float(input("Enter Your Math marks out of 80: "))
     max_marks += 80
 else:
-    Math_ = None
+    Math_ = 0
 
 Taken_Biology = bool(int(input("If you have taken Biology 1, if not enter 0: ")))
 Biology_ = 0
-if Taken_PE:   
+if Taken_Biology:   
     Subjects.append("Biology")
     Biology_ = float(input("Enter Your Biology marks out of 70: "))
     max_marks += 70
 else:
-    Biology_ = None
+    Biology_ = 0
 
-English_ = input("Enter Your English marks out of 80: ")
+English_ = float(input("Enter Your English marks out of 80: "))
 max_marks += 80
-Physics_ = input("Enter Your Physics marks out of 70: ")
+Physics_ = float(input("Enter Your Physics marks out of 70: "))
 max_marks += 70
-Chemistry_ = input("Enter Your Chemistry marks out of 70: ")
+Chemistry_ = float(input("Enter Your Chemistry marks out of 70: "))
 max_marks += 70
-Computer_ = input("Enter Your Computer marks out of 70: ")
+Computer_ = float(input("Enter Your Computer marks out of 70: "))
 max_marks += 70
 
 Subjects.append("English")
