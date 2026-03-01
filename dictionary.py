@@ -1,5 +1,3 @@
-# Program to create a dictionary of all Indian states and their capitals
-
 states_capitals = {
     "Andhra Pradesh": "Amaravati",
     "Arunachal Pradesh": "Itanagar",
@@ -30,7 +28,6 @@ states_capitals = {
     "Uttarakhand": "Dehradun",
     "West Bengal": "Kolkata"
 }
-
 print("List of Indian States and their Capitals:\n")
 for state, capital in states_capitals.items():
     print(f"{state} : {capital}")

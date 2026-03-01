@@ -1,4 +1,3 @@
-# The user enters his/her marks in each subject
 Subjects = []
 Taken_PE = bool(int(input("If you have taken Physical Education Enter 1, if not enter 0: ")))
 max_marks = 0
